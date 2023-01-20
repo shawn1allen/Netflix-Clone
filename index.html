@@ -9,6 +9,7 @@
     <script src="assets/js/javascript.js"></script>
     <link rel="stylesheet" href="assets/css/styles.css" />
 
+    <link rel="shortcut icon" href="assets/images/logo.png">
     <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
 </head>
 
@@ -32,12 +33,14 @@
 
             <div class="form-submit">
                 <div class="email-container">
-                    <input type="email" class="email" placeholder="a" required />
+                    <input type="email" class="email" id="email1" oninput="validateEmail(document.getElementById('email1').value, document.getElementById('d1'))" placeholder="a" required novalidate />
+                    
                     <div class="floating-label">Email address</div>
                 </div>
-                <a href="#" class="btn btn-lrg">Get Started <i
-                        class="chevron fa-sharp fa-solid fa-chevron-right"></i></a>
-            </div>
+                
+                <a href="#" class="btn btn-lrg">Get Started <i class="chevron fa-sharp fa-solid fa-chevron-right"></i></a>
+                
+            </div><div class="display" id="d1"></div>
         </div>
 
     </div>
@@ -202,7 +205,8 @@
 
             <div class="form-submit">
                 <div class="email-container">
-                    <input type="email" class="email" placeholder="a" required />
+                    <input type="email" class="email" onchange="validateEmail(this.value)" placeholder="a" required />
+                    
                     <div class="floating-label">Email address</div>
                 </div>
                 <a href="#" class="btn btn-lrg">Get Started <i

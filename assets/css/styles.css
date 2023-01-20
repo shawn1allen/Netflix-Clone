@@ -187,7 +187,8 @@ a {
     align-items: center;
     text-align: center;
     margin: 100px auto;
-    width: 500px;
+    width: 80%;
+    max-width: 750px;
     z-index: 2;
 }
 
@@ -260,6 +261,15 @@ select:focus {
     transform: translate(10px, -46px);
     pointer-events: none;
     transition: 0.2s ease all;
+}
+
+.display {
+    text-align: start;
+    margin: 5px;
+}
+
+.error {
+    color: orange;
 }
 
 .btn-lrg {
