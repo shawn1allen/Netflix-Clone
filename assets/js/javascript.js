@@ -27,6 +27,8 @@ window.onload = function() {
   
   // Play all videos in the array
   videoArray.forEach(function(video) {
-    video.play();
+    video.muted = true;
+    video.autoplay = true;
+    video.loop = true;
   });
 }
