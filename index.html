@@ -21,7 +21,7 @@
     <div class="div1">
         <div class="navbar">
             <img src="/assets/images/netflix_logo.png" alt="Netflix logo">
-            
+
             <a href="#" class="btn btn-rounded" onclick="alert('Test button!')">Sign in</a>
         </div>
 
@@ -29,111 +29,212 @@
             <h1>Unlimited movies, TV shows, and more.</h1>
             <h2>Watch anywhere. Cancel antyime.</h2>
             <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <form class="form-submit">
-                <input class="email" type="email" id="email" placeholder="Email address">
-                <a href="#" class="btn btn-lrg">Get Started <i class="chevron fa-sharp fa-solid fa-chevron-right"></i> </a>
-            </form>
+
+            <div class="form-submit">
+                <div class="email-container">
+                    <input type="email" class="email" placeholder="a" required />
+                    <div class="floating-label">Email address</div>
+                </div>
+                <a href="#" class="btn btn-lrg">Get Started <i
+                        class="chevron fa-sharp fa-solid fa-chevron-right"></i></a>
+            </div>
         </div>
-        
+
     </div>
-    <div class="div2">
+    <div class="div2 media-div">
         <div class="container">
-            <div>
-                <h1>Enjoy on your TV.</h1>
-                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, 
+            <div class="text-container">
+                <h1 class="h-text">Enjoy on your TV.</h1>
+                <p class="p-text">Watch on Smart TVs, Playstation, Xbox, Chromecast,
                     Apple TV, Blu-ray players, and more.</p>
             </div>
-            <div>
-                <img class="div-images" src="assets/images/div2_img.png" alt="">
+            <div class="media-container">
+                <video autoplay loop class="vids div2-vid" source src="assets/images/div2_vid.m4v">
+                    Your browser does not support the video tag.
+                </video>
+                <img class="div-images" src="assets/images/div2_img.png" alt="Image of TV entertainment system">
             </div>
         </div>
     </div>
-    <div class="div3">
-        <div class="container">
-            <div>
-                <img class="div-images" src="assets/images/div3_img.png" alt="">
-            </div>
-            <div>
-                <h1>Watch everywhere</h1>
-                <p>Stream unlimited movies and TV shows on your phone, 
+    <div class="div3 media-div">
+        <div class="container reverse">
+            <div class="text-container">
+                <h1 class="h-text">Watch everywhere</h1>
+                <p class="p-text">Stream unlimited movies and TV shows on your phone,
                     tablet, laptop, and TV without paying more.</p>
             </div>
-            
+            <div class="media-container">
+                <img class="div-images" src="assets/images/div3_img.png" alt="Image of TV entertainment system">
+                <video autoplay loop class="vids div3-vid" source src="assets/images/div3_vid.m4v">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </div>
-    <div class="div4">
+    <div class="div4 media-div">
         <div class="container">
-            <div>
-                <h1>Create profiles for kids.</h1>
-                <p>Send kids on adventures with their favorite characters in a 
+            <div class="text-container div4-text-cont">
+                <h1 class="h-text">Create profiles for kids.</h1>
+                <p class="p-text">Send kids on adventures with their favorite characters in a
                     space made just for them—free with your membership.</p>
             </div>
-            <div>
-                <img class="div-images" src="assets/images/div4_img.png" alt="">
+            <div class="media-container">
+                <img class="div-images" src="assets/images/div4_img.png" alt="Disney movie photo">
             </div>
         </div>
     </div>
-    <div class="div5">
-        <div class="container">
-            <div>
-                <img class="div-images" src="assets/images/div5_img.jpg" alt="">
+    <div class="div5 media-div">
+        <div class="container reverse">
+            <div class="text-container">
+                <h1 class="h-text">Download your shows to watch offline.</h1>
+                <p class="p-text">Available on all plans except Basic with ads.</p>
             </div>
-            <div>
-                <h1>Download your shows to watch offline.</h1>
-                <p>Available on all plans except Basic with ads.</p>
+            <div class="media-container div5-media">
+                <div class="downloading-div">
+                    <img class="cover" src="assets/images/div5_box_cover.png" alt="Cover photo Stranger Things">
+                    <div class="text-holder">
+                        <h3>Stranger Things</h3>
+                        <p>Downloading...</p>
+                    </div>
+                    <img class="circle" src="assets/images/animation.gif" alt="Downloading animation">
+                </div>
+                <img class="phone-img" src="assets/images/div5_img.jpg"
+                    alt="Stranger Things's character Illeven photo">
             </div>
         </div>
     </div>
     <div class="div6">
-        <h1>Frequently Asked Questions</h1>
+        <h1 class="h-text qs">Frequently Asked Questions</h1>
         <div class="questions">
-            <div class="dropdown">
-                <button onclick="dropList('myDropdown1')" class="dropbtn">What is Netflix?</button>
-                <div id="myDropdown1" class="dropdown-content">
-                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, 
-                        movies, anime, documentaries, and more on thousands of internet-connected devices.
+            <div class="parent" id="parent1">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>What is Netflix?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Netflix is a streaming service that offers a wide variety
+                        of award-winning TV shows, movies, anime, documentaries,
+                        and more on thousands of internet-connected devices.</p>
 
-                        You can watch as much as you want, whenever you want – all for one low monthly price. 
-                        There's always something new to discover and new TV shows and movies are added every week!</p>
+                    <p>You can watch as much as you want, whenever you want - all for one low monthly
+                        price. There's always something new to discover and new TV shows and movies are
+                        added every week!</p>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="dropList('myDropdown2')" class="dropbtn">Dropdown</button>
-                <div id="myDropdown2" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
+            <div class="parent" id="parent2">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>How much does Netflix cost?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+                        all for one fixed monthly fee. Plans range from $6.99 to $19.99 a month. No
+                        extra costs, no contracts.</p>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="dropList('myDropdown3')" class="dropbtn">Dropdown</button>
-                <div id="myDropdown3" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
+            <div class="parent" id="parent3">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>What's different on Basic with ads?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Basic with ads is a great way to enjoy movies and TV shows at a lower price.
+                        You can stream your favorites on any device with limited ad breaks. This plan
+                        does not allow downloads and a limited number of movies and TV shows are not
+                        available due to licensing restrictions. Some location and device restrictions
+                        also apply. Learn more.</p>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="dropList('myDropdown4')" class="dropbtn">Dropdown</button>
-                <div id="myDropdown4" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
+            <div class="parent" id="parent4">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>Where can I watch?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly
+                        on the web at netflix.com from your personal computer or on any internet-connected
+                        device that offers the Netflix app, including smart TVs, smartphones, tablets,
+                        streaming media players and game consoles.</p>
+                    <p>
+                        You can also download your favorite shows with the iOS, Android, or Windows 10 app.
+                        Use downloads to watch while you're on the go and without an internet connection.
+                        Take Netflix with you anywhere.</p>
                 </div>
             </div>
-            <div class="dropdown">
-                <button onclick="dropList('myDropdown5')" class="dropbtn">Dropdown</button>
-                <div id="myDropdown5" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 1</a>
+            <div class="parent" id="parent5">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>How do I cancel?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Netflix is flexible. There are no pesky contracts and no commitments. You can easily
+                        cancel your account online in two clicks. There are no cancellation fees - start or
+                        stop your account anytime.</p>
+                </div>
+            </div>
+            <div class="parent" id="parent6">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>What can I watch on Netflix?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                        award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+                </div>
+            </div>
+            <div class="parent" id="parent7">
+                <div class="top" onclick="toggleBottom(this)">
+                    <p>Is Netflix good for kids?</p>
+                    <i class="symbol fa-regular fa-plus"></i>
+                </div>
+                <div class="bottom hide">
+                    <p>The Netflix Kids experience is included in your membership to give parents control while kids
+                        enjoy family-friendly TV shows and movies in their own space.</p>
+                    <p>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity
+                        rating of content kids can watch and block specific titles you don't want kids to see.</p>
                 </div>
             </div>
         </div>
+
+        <div class="content cont2">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+            <div class="form-submit">
+                <div class="email-container">
+                    <input type="email" class="email" placeholder="a" required />
+                    <div class="floating-label">Email address</div>
+                </div>
+                <a href="#" class="btn btn-lrg">Get Started <i
+                        class="chevron fa-sharp fa-solid fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="div7">
+        
+        <ul class="flex-parent">
+            <div class="head">
+                <p>Questions? Call 1-844-505-2993</p>
+            </div>
+            <li class="flex-child"><a href="#">FAQ</a></li>
+            <li class="flex-child"><a href="#">Help Center</a></li>
+            <li class="flex-child"><a href="#">Account</a></li>
+            <li class="flex-child"><a href="#">Media Center</a></li>
+            <li class="flex-child"><a href="#">Investor Relations</a></li>
+            <li class="flex-child"><a href="#">Jobs</a></li>
+            <li class="flex-child"><a href="#">Redeem Gift Cards</a></li>
+            <li class="flex-child"><a href="#">Buy Gift Cards</a></li>
+            <li class="flex-child"><a href="#">Ways to Watch</a></li>
+            <li class="flex-child"><a href="#">Terms of Use</a></li>
+            <li class="flex-child"><a href="#">Privacy</a></li>
+            <li class="flex-child"><a href="#">Cookie Preferences</a></li>
+            <li class="flex-child"><a href="#">Corporate Information</a></li>
+            <li class="flex-child"><a href="#">Contact Us</a></li>
+            <li class="flex-child"><a href="#">Speed Test</a></li>
+            <li class="flex-child"><a href="#">Legal Notices</a></li>
+            <li class="flex-child"><a href="#">Only on Netflix</a></li>
+            <li class="flex-child"><a href="#">Do Not Sell or Share My Personal Information</a></li>
+        </ul>
     </div>
 </body>
 
