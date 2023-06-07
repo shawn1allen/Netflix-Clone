@@ -1,6 +1,6 @@
 # Netflix Clone
 
-Project for creating a clone of Netflix's desktop website
+https://shawn1allen.github.io/Netflix-Clone/
 
 ## Author
 
